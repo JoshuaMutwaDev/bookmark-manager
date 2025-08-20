@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bookmark Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+ <header>
+   <h1>📑My Bookmark Manager</h1>
+ </header>
+ <main>
+  <section id="main-section">
+   <form id="main-form">
+    <div class="info-box">
+    <p><strong>Manage your favorite links easily.</strong> Organize, tag, and access your bookmarks anytime.</p>
+   </form>
+    </div>
+    <div class="main-form-btns">
+     <button id="show-add-form-btn">Add Bookmark</button>
+     <button id="view-bookmark-btn">View Bookmarks</button>
+    </div>
+  </section>
+
+  <section id="add-bookmark-section" class="hidden">
+    <h2>Add Bookmark</h2>
+    <form id="add-bookmark-form">
+        <label for="bookmark-name">Bookmark Name:</label>
+        <input type="text" id="bookmark-name" placeholder="Bookmark Name" required />
+        <label for="bookmark-url">Bookmark URL:</label>
+        <input type="url" id="bookmark-url" placeholder="Bookmark URL" required />
+        <label for="bookmark-tags">Tags (comma-separated):</label>
+        <input type="text" id="bookmark-tags" placeholder="e.g. tech, news" />
+        <button id="add-bookmark-btn" type="submit">Add Bookmark</button>
+        <button id="add-form-back-btn" class="back-btn">← Go Back</button>
+    </form>
+  </section>
+
+  <section id="view-bookmarks-section" class="hidden">
+    <h2>Bookmarks</h2>
+    <ul id="bookmarks-list"></ul>
+    <button id="view-form-back-btn" class="back-btn">← Go Back</button>
+  </section>
+ </main>
+</body>
+<script src="script.js"></script>
+</html>
+
+
+  
